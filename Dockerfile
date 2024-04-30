@@ -14,7 +14,8 @@ RUN Rscript -e 'devtools::install_github("zdk123/SpiecEasi")' \
 RUN Rscript -e "install.packages('taxa')" \
     && Rscript -e "install.packages('DGCA')" \
     && Rscript -e "install.packages('rrBLUP')" \
-    && Rscript -e "install.packages('Rtsne')" \
+    && Rscript -e "install.packages('Rtsne')"
+    
 ## Devtools install
 RUN Rscript -e "devtools::install_github('arc85/singleseqgset')" \
     && Rscript -e "devtools::install_github('jbisanz/qiime2R')"
