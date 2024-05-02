@@ -80,7 +80,7 @@ RUN Rscript -e "BiocManager::install(c('affy', 'affyio', 'annotate', 'Annotation
     'gson', 'Gviz', 'HDF5Array', 'HDO.db', 'IlluminaHumanMethylation450kanno.ilmn12.hg19', \
     'IlluminaHumanMethylation450kmanifest', 'IlluminaHumanMethylationEPICanno.ilm10b4.hg19', \
     'IlluminaHumanMethylationEPICmanifest', 'illuminaio', 'impute', 'interactiveDisplayBase', \
-    'IRanges', 'isva', 'KEGGgraph', 'KEGGREST', 'kernlab', 'lambda.r', 'latex2exp', 'latticeExtra',
+    'IRanges', 'isva', 'KEGGgraph', 'KEGGREST', 'kernlab', 'lambda.r', 'latex2exp', 'latticeExtra', \
     'Linnorm', 'lmerTest', 'locfit', 'Maaslin2', 'MAGeCKFlute', 'MAST', 'MatrixGenerics', 'maxprobes', \
     'metagenomeSeq', 'MethylAid', 'methylclock', 'methylclockData', 'methylumi', 'minet', 'minfi', \
     'minfiData', 'missMethyl', 'mnem', 'multcomp', 'multtest', 'nempi', 'OrganismDbi', 'org.Hs.eg.db', \
