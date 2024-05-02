@@ -63,3 +63,30 @@ RUN Rscript -e "BiocManager::install('AnnotationDbi')" \
 
 ## Remote install
 RUN Rscript -e "remotes::install_github('omnideconv/immunedeconv')" 
+
+## More packages from 4.3.0 library
+RUN Rscript -e "BiocManager::install(c('affy', 'affyio', 'annotate', 'AnnotationDbi', \
+    'AnnotationFilter', 'AnnotationForge', 'AnnotationHub', 'AnnotationHubData', 'basedosdados', \
+    'basilisk', 'basilisk.utils', 'beachmat', 'beanplot', 'beeswarm', 'BiasedUrn', 'biglm', \
+    'bigrquery', 'Biobase', 'BiocCheck', 'BiocFileCache', 'BiocGenerics', 'BiocIO', 'BiocNeighbors', \
+    'BiocParallel', 'BiocSingular', 'BiocVersion', 'biocViews', 'biomaRt', 'Biostrings', 'biovizBase', \
+    'BoolNet', 'BSgenome', 'bsseq', 'bumphunter', 'celldex', 'clusterProfiler', 'DelayedArray', \
+    'DelayedMatrixStats', 'densvis', 'depmap', 'dichromat', 'diptest', 'dir.expiry', 'DMRcate', \
+    'DMRcatedata', 'dnaMethyAge', 'DOSE', 'DoubletFinder', 'DSS', 'DT', 'ENmix', \
+    'enrichplot', 'ensembldb', 'epiNEM', 'ExperimentHub', 'ExperimentHubData', 'fastcluster', \
+    'FDb.InfiniumMethylation.hg19', 'fgsea', 'FlowSorted.Blood.EPIC', 'gapminder', 'genefilter', \
+    'geneplotter', 'GenomeInfoDb', 'GenomeInfoDbData', 'GenomicAlignments', 'GenomicFeatures', \ 
+    'GenomicRanges', 'GEOquery', 'ggpp', 'ggtree', 'GO.db', 'GOSemSim', 'graph', 'gridGraphics', \
+    'gson', 'Gviz', 'HDF5Array', 'HDO.db', 'IlluminaHumanMethylation450kanno.ilmn12.hg19', \
+    'IlluminaHumanMethylation450kmanifest', 'IlluminaHumanMethylationEPICanno.ilm10b4.hg19', \
+    'IlluminaHumanMethylationEPICmanifest', 'illuminaio', 'impute', 'interactiveDisplayBase', \
+    'IRanges', 'isva', 'KEGGgraph', 'KEGGREST', 'kernlab', 'lambda.r', 'latex2exp', 'latticeExtra',
+    'Linnorm', 'lmerTest', 'locfit', 'Maaslin2', 'MAGeCKFlute', 'MAST', 'MatrixGenerics', 'maxprobes', \
+    'metagenomeSeq', 'MethylAid', 'methylclock', 'methylclockData', 'methylumi', 'minet', 'minfi', \
+    'minfiData', 'missMethyl', 'mnem', 'multcomp', 'multtest', 'nempi', 'OrganismDbi', 'org.Hs.eg.db', \
+    'patchwork', 'pathview', 'pcalg', 'pheatmap', 'planet', 'prabclus', 'preprocessCore', 'ProtGenerics', \
+    'pscl', 'RcppHNSW', 'RcppML', 'restfulr', 'rgl', 'Rgraphviz', 'rhdf5', 'rhdf5filters', 'Rhdf5lib', \
+    'Rhtslib', 'R.methodsS3', 'rngtools', 'Rsamtools', 'rsvd', 'rtracklayer', 'S4Arrays', 'S4Vectors', 'sandwich', \
+    'ScaledMatrix', 'scuttle', 'sesame', 'sesameData', 'siggenes', 'snakecase', 'SummarizedExperiment', \
+    'sva', 'trackplot', 'treeio', 'TxDb.Hsapiens.UCSC.hg19.knownGene', 'VariantAnnotation', 'wateRmelon', \
+    'Wrench', 'XVector', 'zlibbioc'))"
