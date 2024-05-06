@@ -24,6 +24,7 @@ RUN Rscript -e "devtools::install_github('arc85/singleseqgset')" \
 RUN Rscript -e "BiocManager::install('AnnotationDbi')" \
     && Rscript -e "BiocManager::install('batchelor')" \ 
     && Rscript -e "BiocManager::install('biomaRt')" \
+    && Rscript -e "BiocManager::install('BSgenome')" \
     && Rscript -e "BiocManager::install('clustifyr')" \
     && Rscript -e "BiocManager::install(c('clusterProfiler'))" \
     && Rscript -e "BiocManager::install(c('DelayedMatrixStats'))" \
